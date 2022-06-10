@@ -1,0 +1,549 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+   <!-- Required meta tags -->
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+   <!-- Bootstrap CSS -->
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+   <!-- my fonts -->
+   <link href="https://fonts.googleapis.com/css2?family=Viga&display=swap" rel="stylesheet">
+   <!-- my css -->
+   <link rel="stylesheet" href="css/style.css">
+   <title> my portfolio </title>
+   <!-- my icon -->
+   <link rel="stylesheet" href="fontawesome-free/css/all.min.css">
+   <!-- scroll revelal -->
+   <script src="https://unpkg.com/scrollreveal@4"></script>
+   <!-- typed -->
+   <script src="js/typed.js"></script>
+   <!-- 3d parallax -->
+   <script src="js/vanilla-tilt.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-circle-progress/1.2.2/circle-progress.min.js"></script>
+   <!-- map -->
+   <script src="http://maps.googleapis.com/maps/api/js"></script>
+   <script>
+      function initialize() {
+         var propertiPeta = {
+            center: new google.maps.LatLng(34.6288519, 133.9341398),
+            zoom: 9,
+            mapTypeId: google.maps.MapTypeId.ROADMAP
+         };
+
+         var peta = new google.maps.Map(document.getElementById("googleMap"), propertiPeta);
+
+         // membuat Marker
+         var marker = new google.maps.Marker({
+            position: new google.maps.LatLng(34.6288519, 133.9341398),
+            map: peta,
+            animation: google.maps.Animation.BOUNCE
+         });
+
+      }
+      google.maps.event.addDomListener(window, 'load', initialize);
+   </script>
+
+
+</head>
+
+<body>
+   <!-- navbar -->
+   <nav id="navbar-example2" class="navbar navbar-expand-lg navbar-light ">
+      <div class="container">
+         <img src="img/your-logo.png" style="margin-right: 20px; margin-top: 7px;">
+         <a class=" navbar-brand mr-2" href="#"></a>
+         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+         </button>
+         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ">
+               <a class="nav-link active" href="#home">Home <span class="sr-only mr-4">(current)</span></a>
+               <a class="nav-link" href="#features">download</a>
+               <a class="nav-link" href="#portfolio">portfolio</a>
+               <a class="nav-link " href="#testimonal">about</a>
+            </div>
+         </div>
+
+      </div>
+
+   </nav>
+   <!-- translate -->
+
+   <!-- corosual -->
+   <section id="home" data-spy="scroll" data-target="#navbar-example2" data-offset="0">
+      <div class="container" style="height: 500px;">
+
+
+         <div class="container">
+            <img class="wave" src="img/header-background.jpg">
+            <div class="row">
+               <div class="col-6 mt-5 ">
+                  <h5>HEY THERE!</h5> <br>
+                  <div class="nama">
+                     <h1>I AM <span class="type" style=" color:  #2c8ba8; text-transform: uppercase;"></span>
+                     </h1>
+                  </div><br>
+                  <div class="nama">
+                     <h5>FRONT END DEVELOP</h5>
+                  </div>
+                  <div class="row mb-2" style="margin-top: -20px;">
+                     <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
+                        <ul class="list-unstyled list-inline social text-center"
+                           style="position: absolute;left: 2;margin-top: -10px7;">
+                           <li class="list-inline-item"><a href="https://www.fiverr.com/share/qb8D02"><i
+                                    class="fab fa-facebook"></i></a>
+                           </li>
+                           <li class="list-inline-item"><a href="https://www.fiverr.com/share/qb8D02"><i
+                                    class="fab fa-twitter"></i></a>
+                           </li>
+                           <li class="list-inline-item"><a href="https://www.instagram.com/teguh_darma123/"><i
+                                    class="fab fa-instagram"></i></a></li>
+                           <li class="list-inline-item"><a href="https://www.fiverr.com/share/qb8D02"><i
+                                    class="fab fa-google-plus"></i></a></li>
+                           <li class="list-inline-item"><a href="#email" target="_blank"><i
+                                    class="fa fa-envelope"></i></a></li>
+                        </ul>
+                     </div>
+                     <hr>
+                  </div>
+                  <br>
+                  <a href="" class="brn" style="margin-left: -19px;"><samp style="font-size:20px;">see my
+                        work</samp></a>
+
+               </div>
+               <div class="col-6">
+                  <div class="img">
+                     <img src="img/teguh_darma123-___B_9irGujxFa___- (1).png" alt="">
+
+                  </div>
+               </div>
+            </div>
+   </section>
+   <!-- circle bar  -->
+   <section id="skill">
+      <div class="container align-content-center mt-5">
+         <div class="wrapper">
+            <div class="card">
+               <div class="circle">
+                  <div class="bar"></div>
+                  <div class="box"><span></span></div>
+               </div>
+               <div class="text"><i class="fab fa-html5"></i>HTML</div>
+            </div>
+            <div class="card js">
+               <div class="circle">
+                  <div class="bar"></div>
+                  <div class="box"><span></span></div>
+               </div>
+               <div class="text"><i class="fab fa-css3"></i>css 3</div>
+            </div>
+            <div class="card react">
+               <div class="circle">
+                  <div class="bar"></div>
+                  <div class="box"><span></span></div>
+               </div>
+               <div class="text"><i class="fab fa-jsfiddle"></i>java script</div>
+            </div>
+         </div>
+      </div>
+   </section>
+
+
+   <!-- akhir skill -->
+
+   <!-- awal card -->
+   <!-- awal card -->
+   <section id="features" data-spy="scroll" data-target="#navbar-example2" data-offset="0">
+      <div class="container">
+         <div class="row mb-5" style="margin-top: 20px; margin-bottom: 20px !important;">
+            <div class="col-6">
+               <div class="img">
+                  <img src="img/undraw_download_pc33.png">
+               </div>
+            </div>
+            <div class="col-lg-6">
+               <h5>about me</h5>
+               <h1>front end develoment</h1><br>
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure repudiandae praesentium magni facere
+                  officia repellendus! Ad fugit delectus dolor voluptate quod exercitationem doloribus maiores aut
+                  nostrum
+                  fugiat, recusandae, ducimus totam?</p>
+               <a href="https://drive.google.com/file/d/1XRnvRvFWizzyRZwdoo9WqfC3vW16dIcD/view?usp=sharing"
+                  class="brn"><samp style="font-size:17px;">download vc</samp></a>
+            </div>
+         </div>
+   </section>
+   <!-- akhir card -->
+   <!-- awal card -->
+   <section id="skill">
+      <div class="container align-content-center ">
+         <h3 class="skill" style="text-align: center ;">my skill</h3>
+         <div class="card-group align-content-center">
+
+            <div class="card">
+               <img class="card-img-top" src="img/ux.svg" alt="Card image cap">
+               <div class="card-body">
+                  <h5 class="card-title">ui designer</h5>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                     additional
+                     content. This content is a little bit longer.</p>
+               </div>
+               <a href="">
+                  <div class="card-footer ">learn more</div>
+               </a>
+
+            </div>
+            <div class="card">
+               <img class="card-img-top" src="img/design.svg" alt="Card image cap">
+
+               <div class="card-body">
+                  <h5 class="card-title">designer</h5>
+                  <p class="card-text">This card has supporting text below as a natural lead-in to additional
+                     content.
+                  </p>
+               </div>
+               <a href="">
+                  <div class="card-footer">
+                     learn more
+                  </div>
+               </a>
+
+            </div>
+            <div class="card">
+               <img class="card-img-top" src="img/coding.svg" alt="Card image cap">
+               <div class="card-body">
+                  <h5 class="card-title">web develoment</h5>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                     additional
+                     content. This card has even longer</p>
+               </div>
+               <a href="">
+                  <div class="card-footer ">learn more</div>
+               </a>
+            </div>
+         </div>
+      </div>
+   </section>
+   <!-- akhir card -->
+
+   <!-- awal portfolio -->
+   <section id="portfolio" class="portfolio " data-spy="scroll" data-target="#navbar-example2" data-offset="0">
+      <div class="container">
+         <div class="row">
+            <div class="col mb-4 pt-4">
+               <h5> my portofolio</h5>
+               <h3>check my website design</h3>
+            </div>
+         </div>
+         <div class="row mb-4">
+            <div class="col-md">
+               <div class="card">
+                  <img src="img/2022-06-10 (10).png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                     <h4 class="card-title">Trip place</h4>
+                  </div>
+               </div>
+               <a class="nav-link" href="https://airbnbr-teguhdarma.vercel.app/" target="_blank">
+                  <div class="card-footer">
+                     <P><i class="fab fa-telegram-plane mr-2"></i>view website</P>
+                  </div>
+               </a>
+            </div>
+            <div class="col-md">
+               <div class="card">
+                  <img src="img/2022-06-10 (12).png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                     <h4 class="card-title">Online shop</h4>
+                  </div>
+                  <a class="nav-link" href="https://toko-jualan.vercel.app/" target="blank">
+                     <div class="card-footer">
+                        <P><i class="fab fa-telegram-plane mr-2"></i>view website</P>
+                     </div>
+                  </a>
+               </div>
+            </div>
+            <div class="col-md">
+               <div class="card">
+                  <img src="img/2022-06-10 (6).png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                     <h4 class="card-title">3d model dance</h4>
+                  </div>
+                  <a class="nav-link" href="https://3d-model-teguhdarma.vercel.app/" target="_blank">
+                     <div class="card-footer">
+                        <P><i class="fab fa-telegram-plane mr-2"></i>view website</P>
+                     </div>
+                  </a>
+               </div>
+            </div>
+         </div>
+         <div class="row">
+            <div class="col-md">
+               <div class="card">
+                  <img src="img/2022-06-10 (7).png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                     <h4 class="card-title">Bali hotel</h4>
+                  </div>
+                  <a class="nav-link" href="https://hotel-html.vercel.app/" target="_blank">
+                     <div class="card-footer">
+                        <P><i class="fab fa-telegram-plane mr-2"></i>view website</P>
+                     </div>
+                  </a>
+               </div>
+            </div>
+            <div class="col-md">
+               <div class="card">
+                  <img src="img/2022-06-10 (9).png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                     <h4 class="card-title">Cake shop</h4>
+                  </div>
+                  <a class="nav-link" href="https://cake-shop-three.vercel.app/" target="_blank">
+                     <div class="card-footer">
+                        <p><i class="fab fa-telegram-plane mr-2"></i>view website</p>
+                     </div>
+                  </a>
+               </div>
+            </div>
+            <div class="col-md">
+               <div class="card ">
+                  <img class="card-img-top" src="img/2022-06-10 (16).png" alt="Card image cap">
+                  <div class="card-body">
+                     <h4 class="card-title">share photo</h4>
+                  </div>
+                  <a class="nav-link" href="https://share-photo.vercel.app/"
+                     target="_blank">
+                     <div class="card-footer">
+                        <P><i class="fab fa-telegram-plane mr-2"></i>view website</P>
+                     </div>
+                  </a>
+               </div>
+            </div>
+         </div>
+   </section>
+   <!-- akhir portfolio -->
+   <!-- container -->
+   <div class="container" style="margin-top: -15px;">
+      <!-- info panel -->
+      <div class="row justify-content-center">
+         <div class="col-12 info-panel">
+            <div class="row">
+               <div class="col-lg-8">
+
+                  <h4>interested work with me ? </h4>
+               </div>
+               <div class="col-lg-2">
+                <a href="https://www.instagram.com/teguh_darma123/">
+                  <button type="button" class="btn btn-outline-primary">
+                      
+                        Chat me in intsa
+                    
+                     
+                  </button>
+                </a>
+               </div>
+               <div class="col-lg-2">
+                  <a href="#email"><button class="btn btn-primary" type="submit"><i
+                           class="fa fa-envelope pr-2"></i>email me
+                     </button></a>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <!-- akhir info panel -->
+
+   <!-- testimonial -->
+   <section id="testimonal" class="testimonial" data-spy="scroll" data-target="#navbar-example2" data-offset="0">
+      <div class="row justify-content-center mb-5">
+         <div class="col-lg-10">
+            <h5>"WHY HIRE ME ?"</h5>
+         </div>
+      </div>
+      <div class="col-lg-12">
+         <div class="row justify-content-center">
+            <div class="col-lg-4 justify-content-center d-flex">
+               <figure class="figure">
+                  <img src="img/img1.png" class="figure-img img-fluid rounded-circle utama" style="margin-left: 180px;"
+                     alt="test1">
+                  <figcaption class="figure-caption">
+                     <h5>comminate</h5>
+                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis officia id sit sint
+                        saepe
+                        vero provident tempora, cupiditate obcaecati. Aperiam laborum eveniet reprehenderit animi
+                        perferendis beatae saepe id optio consectetur?</p>
+                  </figcaption>
+               </figure>
+            </div>
+
+            <div class="col-lg-4 justify-content-center d-flex">
+               <figure class="figure">
+                  <img src="img/img2.png" class="figure-img img-fluid rounded-circle utama" style="margin-left: 180px;"
+                     alt=" test2">
+                  <figcaption class="figure-caption">
+                     <h5> team work</h5>
+                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex nisi doloremque a optio ipsam.
+                        Porro
+                        molestias exercitationem earum minus tenetur fuga hic, labore, quisquam, iste incidunt
+                        temporibus eligendi numquam necessitatibus.</p>
+                  </figcaption>
+               </figure>
+            </div>
+            <div class="col-lg-4 justify-content-center d-flex">
+               <figure class="figure">
+                  <img src="img/img3.png" class="figure-img img-fluid rounded-circle utama" style="margin-left: 180px;"
+                     alt=" test3">
+                  <figcaption class="figure-caption">
+                     <h5>management frek</h5>
+                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente placeat doloribus
+                        assumenda
+                        blanditiis ea fuga animi rerum, soluta eius saepe voluptates exercitationem, aperiam, qui
+                        quas
+                        ullam suscipit asperiores iusto inventore!</p>
+                  </figcaption>
+               </figure>
+            </div>
+         </div>
+      </div>
+      </div>
+   </section>
+   <!-- akhir testimonal -->
+   <!-- awal emial -->
+   <section id="email" data-spy=" scroll" data-target="#navbar-example2" data-offset="0">
+      <div class=" container-fluid">
+         <div class="row text-lg-center mb-5">
+            <div class="col-lg-12">
+               <h4>"EMAIL ME "</h4>
+            </div>
+         </div>
+         <div class="row">
+            <div class="col-lg-6">
+               <div id="googleMap" style="width:100%;height:420px;margin-top: 20px;"></div>
+            </div>
+            <div class="col-lg-6">
+               <form>
+                  <div class="form-row">
+                     <div class="form-group col-md-6">
+                        <label for="inputEmail4">Email</label>
+                        <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                     </div>
+                     <div class="form-group col-md-6">
+                        <label for="inputPassword4">Password</label>
+                        <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+                     </div>
+                  </div>
+                  <div class="form-group">
+                     <label for="inputAddress">Address</label>
+                     <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                  </div>
+                  <div class="form-group">
+                     <label for="inputAddress2">Address 2</label>
+                     <input type="text" class="form-control" id="inputAddress2"
+                        placeholder="Apartment, studio, or floor">
+                  </div>
+                  <div class="form-row">
+                     <div class="form-group col-md-6">
+                        <label for="inputCity">City</label>
+                        <input type="text" class="form-control" id="inputCity">
+                     </div>
+                     <div class="form-group col-md-4">
+                        <label for="inputState">State</label>
+                        <select id="inputState" class="form-control">
+                           <option selected>Choose...</option>
+                           <option>...</option>
+                        </select>
+                     </div>
+                     <div class="form-group col-md-2">
+                        <label for="inputZip">Zip</label>
+                        <input type="text" class="form-control" id="inputZip">
+                     </div>
+                  </div>
+                  <div class="form-group">
+                     <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                        <label class="form-check-label" for="gridCheck">
+                           Check me out
+                        </label>
+                     </div>
+                  </div>
+                  <button type="submit" class="btn btn-primary">Send</button>
+               </form>
+            </div>
+         </div>
+      </div>
+   </section>
+   <!-- akhir emial -->
+   <!-- Footer -->
+   <section id="footer">
+      <div class="container-fluid">
+
+         <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
+               <ul class="list-unstyled list-inline social text-center">
+                  <li class="list-inline-item"><a href="https://www.fiverr.com/share/qb8D02"><i
+                           class="fab fa-facebook"></i></a></li>
+                  <li class="list-inline-item"><a href="https://www.fiverr.com/share/qb8D02"><i
+                           class="fab fa-twitter"></i></a></li>
+                  <li class="list-inline-item"><a href="https://www.instagram.com/teguh_darma123/"><i
+                           class="fab fa-instagram"></i></a></li>
+                  <li class="list-inline-item"><a href="https://www.fiverr.com/share/qb8D02"><i
+                           class="fab fa-google-plus"></i></a></li>
+                  <li class="list-inline-item"><a href="#email" target="_blank"><i class="fa fa-envelope"></i></a>
+                  </li>
+               </ul>
+            </div>
+            <hr>
+         </div>
+         <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
+               <p><u><a href="https://www.nationaltransaction.com/">National Transaction Corporation</a></u> is a
+                  Registered MSP/ISO of Elavon, Inc. Georgia [a wholly owned subsidiary of U.S. Bancorp,
+                  Minneapolis, MN]</p>
+               <p class="h6">© All right Reversed.<a class="text-green ml-2"
+                     href="file:///C:/Users/teguh/Desktop/latihan%20css/bootstap.html" target="_blank">TEGUH
+                     DARMA</a></p>
+            </div>
+         </div>
+      </div>
+   </section>
+   <!-- akhir Footer -->
+   <!-- my js -->
+   <script src="js/my copy.js"></script>
+
+
+   <!-- bootstrap -->
+   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"></script>
+   <script src="src= https://code.jquery.com/jquery-3.5.1.js"></script>
+   <script>
+      let options = {
+         startAngle: -1.55,
+         size: 150,
+         value: 0.85,
+         fill: { gradient: ['#a445b2', '#fa4299'] }
+      }
+      $(".circle .bar").circleProgress(options).on('circle-animation-progress',
+         function (event, progress, stepValue) {
+            $(this).parent().find("span").text(String(stepValue.toFixed(2).substr(2)) + "%");
+         });
+      $(".js .bar").circleProgress({
+         value: 0.70
+      });
+      $(".react .bar").circleProgress({
+         value: 0.60
+      });
+   </script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-circle-progress/1.2.0/circle-progress.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"></script>
+</body>
+
+</html>
